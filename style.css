@@ -1,0 +1,16 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body {
+    font-family: Champ;
+    color: #555;
+    text-align: left;
+    background-color: black;
+    scroll-behavior: smooth;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+}
