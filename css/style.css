@@ -10,7 +10,79 @@ html, body {
     font-family: Champ;
     color: #555;
     text-align: left;
-    background-color: black;
+    background-color: white;
     scroll-behavior: smooth;
     font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+}
+
+.nav {background-color: #8CADA7; overflow: auto;}
+.nav ul {margin: 0; padding: 12px;}
+.nav ul li {
+    display: inline;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+    font-size: 20px; 
+    color: black; 
+    margin-left: 40px;
+    padding: 20px;
+    padding-top: 20px;
+}
+.nav a{
+    background-color: #8CADA7;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    display: inline;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px;
+    padding-top: 12px;
+    
+}
+.nav a h1{
+    color:black; font-size: 32px;
+    border: 0px solid;
+    border-color: grey;
+    padding-top: 4px;
+}
+.nav p {
+    color: black;
+    font-size: 20px;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    display: inline;
+}
+.left{float: left}
+.right{float: right}
+
+i {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 12px;
+}
+
+h1{
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+    font-size: 50px; 
+    color: black; 
+}
+h2 {
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+    font-size: 20px; 
+    color: black; 
+}
+h4 {
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+    font-size: 12px; 
+    color: black; 
+}
+
+.col button {
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+    font-size: 20px; 
+    color: black;
+    background-color: #e3d214;
+    height: 60px;
+    width: 200px;
+    border-radius: 8px;
+    margin: 10px;
 }
