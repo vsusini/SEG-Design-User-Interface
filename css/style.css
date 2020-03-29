@@ -83,3 +83,17 @@ h4 {
     border-radius: 8px;
     margin: 10px;
 } */
+
+.dropDownText{
+    font-size: 0.75vw;
+    padding-left: 0.5vw;
+}
+
+.myDropDownItem{
+    white-space: nowrap;
+}
+
+.myDropDownItem:hover{
+    color:red;
+    text-decoration: none;
+}
