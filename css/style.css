@@ -6,9 +6,9 @@
 
 html, body {
     font-family: 'Source Sans Pro', sans-serif;
-    color: #555;
+    color: #1F1F1F !important;
     text-align: left;
-    background-color: white;
+    background-color: #E9E9E9 !important;
     scroll-behavior: smooth; 
 }
 
@@ -87,29 +87,27 @@ h4 {
 .dropDownText{
     font-size: 0.75vw;
     padding-left: 0.5vw;
+    color: #1F1F1F;
+}
+
+.dropDownText:hover{
+    color: #B8A99A !important;
 }
 
 .myDropDownItem{
     white-space: nowrap;
 }
 
-.myDropDownItem:hover{
-    color:red;
-    text-decoration: none;
+.buttonColor{
+    background-color:#FAB565!important;
+    border-color: rgb(255, 136, 0) !important;
+    color: #1F1F1F!important;
 }
 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+.linkColor{
+    color: #1F1F1F;
 }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
+.linkColor:hover{
+    color: #B8A99A;
 }
