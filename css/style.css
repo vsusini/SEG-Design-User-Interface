@@ -92,10 +92,17 @@ h4 {
 
 .dropDownText:hover{
     color: #B8A99A !important;
+    text-decoration: none !important;
 }
 
 .myDropDownItem{
     white-space: nowrap;
+}
+
+.myDropDownItem{
+    white-space: nowrap;
+    color: #B8A99A !important;
+    text-decoration: none !important;
 }
 
 .buttonColor{
