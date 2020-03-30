@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+        <title>Stateroo - Player Stats</title>
+	      <link rel="stylesheet" href="css/style.css" media = "screen and (min-width: 500px)">
+        <!-- <script type="text/javascript" src="javascript/playerPage.js"></script> -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"/>
+    </head>
+
+        <body onload="getGeneralInfo()" style="padding:0; margin: 0; box-sizing: border-box">
+
+
+        <div id=statContainer style="display:block; height: 80%; width:100%; margin-top: 10vh;">
+
+            <div id=leftContainer style="width:20%; height:90vh; background-color:lightgrey; position:absolute; left: 0; margin:0; padding:3vh;">
+                
+                <p1 style="font-size: 2vh;"> Player </p1>
+                <input type="email" class="form-control" placeholder="Ex. Wayne Gretz" style="margin:0.5vh 0 2vh 0;">
+
+                <p1 style="font-size: 2vh;"> Team </p1>
+                <input type="email" class="form-control" placeholder="Ex. Toronto Maple Leafs" style="margin:0.5vh 0 2vh 0;">
+
+                <p1 style="font-size: 2vh;"> Position </p1>
+                <input type="email" class="form-control" placeholder="Ex. Forward" style="margin:0.5vh 0 2vh 0;">
+
+                <p1 style="font-size: 2vh;"> Statistic Type </p1>
+                <input type="email" class="form-control" placeholder="Ex. Goals" style="margin:0.5vh 0 2vh 0;">
+
+                <p1 style="font-size: 2vh;"> Experience </p1>
+                <input type="email" class="form-control" placeholder="Ex. Rookie" style="margin:0.5vh 0 2vh 0;">
+
+                <p1 style="font-size: 2vh;"> Nationality </p1>
+                <input type="email" class="form-control" placeholder="Ex. Canadian" style="margin:0.5vh 0 2vh 0;">
+
+                <button type="submit" class="btn btn-primary mb-2" style="margin-top: 4vh;">Get Stats</button>
+
+            </div>
+
+            <div id=statsContainer style="width:80%; height:90vh; position:absolute; left: 20vw; top: 10vh; margin:0;">
+
+                <table>
+                  <tr>
+                    <th style="background-color: black; color: white;">Player</th>
+                    <th style="background-color: black; color: white;">Team</th>
+                    <th style="background-color: black; color: white;">Position</th>
+                  </tr>
+                  <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                  </tr>
+                  <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                  </tr>
+                  <tr>
+                    <td>Ernst Handel</td>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                  </tr>
+                  <tr>
+                    <td>Island Trading</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                  </tr>
+                  <tr>
+                    <td>Laughing Bacchus Winecellars</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                  </tr>
+                  <tr>
+                    <td>Magazzini Alimentari Riuniti</td>
+                    <td>Giovanni Rovelli</td>
+                    <td>Italy</td>
+                  </tr>
+                </table>
+
+
+
+            </div>
+        </div>
+
+
+
+
+		</body>
+</html>
