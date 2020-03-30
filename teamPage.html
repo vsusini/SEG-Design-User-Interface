@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+        <title>Stateroo - Teams</title>
+	      <link rel="stylesheet" href="css/style.css" media = "screen and (min-width: 500px)">
+        <!-- <script type="text/javascript" src="javascript/playerPage.js"></script> -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"/>
+    </head>
+
+        <body onload="getGeneralInfo()" style="padding:0; margin: 0; box-sizing: border-box">
+
+
+         <nav class="navbar navbar-expand-lg">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                    <a class="navbar-brand pl-5" href="index.html">
+                        <img src="assets/Logo.png" width="150" height="40" alt="">
+                    </a>
+            </div>
+            <div class="navbar-collapse w-100">
+                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item pr-5">
+                        <a class="nav-link linkColor" href="userLandingPage.html">Stats</a>
+                    </li>
+                    <li class="nav-item dropdown pr-5">
+                        <a class="nav-link dropdown-toggle linkColor" href="playerPage.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Teams
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="width: 450px; background-color: #E9E9E9!important;">
+                            <div class="row">
+                                <div class="col-5 ml-4">
+                                    <h6>Western Conference</h6>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            Central
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/chicago.png" class="" width="15" height="15" alt="Chicago Logo"><span class="dropDownText">Chicago</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/colorado.png" class="" width="15" height="15" alt="Colorado Logo"><span class="dropDownText">Colorado</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/dallas.png" class="" width="15" height="15" alt="Dallas Logo"><span class="dropDownText">Dallas</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/minnesota.png" class="" width="15" height="15" alt="Minnesota Logo"><span class="dropDownText">Minnesota</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/nashville.png" class="" width="15" height="15" alt="Nashville Logo"><span class="dropDownText">Nashville</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/stLouis.png" class="" width="15" height="15" alt="St. Louis Logo"><span class="dropDownText">St. Louis</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/winnipeg.png" class="" width="15" height="15" alt="Winnipeg Logo"><span class="dropDownText">Winnipeg</span></a>
+                                        </div>
+                                        <div class="col-6">
+                                            Pacific
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/anaheim.png" class="" width="15" height="15" alt="Anaheim Logo"><span class="dropDownText">Anaheim</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/arizona.png" class="" width="15" height="15" alt="Arizona Logo"><span class="dropDownText">Arizona</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/calgary.png" class="" width="15" height="15" alt="Calgary Logo"><span class="dropDownText">Calgary</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/edmonton.png" class="" width="15" height="15" alt="Bruins Logo"><span class="dropDownText">Edmonton</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/losAngeles.png" class="" width="15" height="15" alt="Los Angeles Logo"><span class="dropDownText">Los Angeles</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/sanJose.png" class="" width="15" height="15" alt="San Jose Logo"><span class="dropDownText">San Jose</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/vancouver.png" class="" width="15" height="15" alt="Vancouver Logo"><span class="dropDownText">Vancouver</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/vegas.png" class="" width="15" height="15" alt="Vegas Logo"><span class="dropDownText">Vegas</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <h6 class="">Eastern Conference</h6>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            Atlantic
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/boston.png" class="" width="15" height="15" alt="Boston Logo"><span class="dropDownText">Boston</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/buffalo.png" class="" width="15" height="15" alt="Buffalo Logo"><span class="dropDownText">Buffalo</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/detroit.png" class="" width="15" height="15" alt="Detroit Logo"><span class="dropDownText">Detroit</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/florida.png" class="" width="15" height="15" alt="Florida Logo"><span class="dropDownText">Florida</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/montreal.png" class="" width="15" height="15" alt="Montreal Logo"><span class="dropDownText">Montreal</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/ottawa.png" class="" width="15" height="15" alt="Ottawa Logo"><span class="dropDownText">Ottawa</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/tampabay.png" class="" width="15" height="15" alt="Tampa Bay Logo"><span class="dropDownText">Tampa Bay</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/toronto.png" class="" width="15" height="15" alt="Toronto Logo"><span class="dropDownText">Toronto</span></a>
+                                        </div>
+                                        <div class="col-6">
+                                            Metropolitan
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/carolina.png" class="" width="15" height="15" alt="Carolina Logo"><span class="dropDownText">Carolina</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/columbus.png" class="" width="15" height="15" alt="Columbus Logo"><span class="dropDownText">Columbus</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/newJersey.png" class="" width="15" height="15" alt="New Jersey Logo"><span class="dropDownText">New Jersey</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/nyIslanders.png" class="" width="15" height="15" alt="NY Islanders Logo"><span class="dropDownText">NY Islanders</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/nyRangers.png" class="" width="15" height="15" alt="Rangers Logo"><span class="dropDownText">Rangers</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/philadelphia.png" class="" width="15" height="15" alt="Philadelphia Logo"><span class="dropDownText">Philadelphia</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/pittsburgh.png" class="" width="15" height="15" alt="Pittsburgh Logo"><span class="dropDownText">Pittsburgh</span></a>
+                                            <a class="myDropDownItem" href="playerPage.html"><img src="assets/teams/washington.png" class="" width="15" height="15" alt="Washington Logo"><span class="dropDownText">Washington</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </li>
+                    <li class="nav-item pr-5">
+                        <a class="nav-link linkColor" href="playerPage.html">Players</a>
+                    </li>
+                    <li class="nav-item pr-5">
+                        <a class="nav-link linkColor" href="playerPage.html">Goalies</a>
+                    </li>
+                    <li class="nav-item pr-5">
+                        <a class="nav-link linkColor" href="signInUp.html"> <i class="fas fa-user-circle"> </i></a>
+                    </li>
+                </ul>
+                    </div>
+                  </nav>
+
+
+
+        <div id=statContainer style="display:block; height: 80%; width:100%; margin-top: 15vh;">
+
+
+
+            <div id=statsContainer style="width:100%; height:75vh; position:absolute; left: 0vw; top: 20vh; margin:0;">
+
+							<div id=teamLogo style="height: 17vh; margin-left: 20vw; width: 19vh;background-image: url(assets/leafs.png);background-size: contain; background-position: 1vw; background-repeat: no-repeat;"> </div>
+
+							<div id=teamInfoContainer style="position: absolute; right: 15vw; top: 0; width:53vw; height: 25%; ">
+								<div id=teamNameContainer style="position: relative; width: 100%; height: 40%; border-bottom: 2px solid black">
+									<p1 style="position: relative; font-size: 3.5vh; font-weight: bolder; position:relative; margin-left: 35%;"> Toronto Maple Leafs </p1>
+								</div>
+
+								<div id=teamStatsContainer style="position: relative; width: 100%; height: 60%; display: inline-block; padding-left: 1.5vw;">
+									<div id=stat style="position: relative; display: inline-block; height: 10vh; width: 8vw; font-weight: 500; text-align: center; margin-top: 1vh;"> Games <br>  36 </span> </div>
+									<div id=stat style="position: relative; display: inline-block; height: 10vh; width: 8vw; font-weight: 500; text-align: center; margin-top: 1vh;"> Wins <br>  25 </span> </div>
+									<div id=stat style="position: relative; display: inline-block; height: 10vh; width: 8vw; font-weight: 500; text-align: center; margin-top: 1vh;"> Losses <br>  09 </span> </div>
+									<div id=stat style="position: relative; display: inline-block; height: 10vh; width: 8vw; font-weight: 500; text-align: center; margin-top: 1vh;"> OT Losses <br>  03 </span> </div>
+									<div id=stat style="position: relative; display: inline-block; height: 10vh; width: 8vw; font-weight: 500; text-align: center; margin-top: 1vh;"> Points <br>  81 </span> </div>
+									<div id=stat style="position: relative; display: inline-block; height: 10vh; width: 8vw; font-weight: 500; text-align: center; margin-top: 1vh;"> Standing <br>  3rd </span> </div>
+								</div>
+
+								<div id=topPlayerContainer style="position: absolute; margin-top: 5vh; left: -11vw; width: 25vw; height: 50vh; padding: 1vh;">
+									<p1 style="position: relative; font-size: 2vh; font-weight: bolder; position:relative;"> Top Players </p1>
+									<div id=matts style="height: 10vh;  margin-top: 2vh; width: 12vh;background-image: url(assets/matts.png);background-size: contain; background-position: 1vw; background-repeat: no-repeat;"> <span style="position: absolute; top: 9vh; left: 8vw;"> Auston Matthews </span> </div>
+									<div id=marner style="height: 10vh; margin-top: 3vh; width: 12vh;background-image: url(assets/marner.png);background-size: contain; background-position: 1vw; background-repeat: no-repeat;"> <span style="position: absolute; top: 22vh; left: 8vw;"> Mitchell Marner </span> </div>
+									<div id=anderson style="height: 10vh; margin-top: 3vh; width: 12vh;background-image: url(assets/andersen.png);background-size: contain; background-position: 1vw; background-repeat: no-repeat;"> <span style="position: absolute; top: 35vh; left: 8vw;"> Frederik Andersen </span> </div>
+								</div>
+
+								<div id=piChartContainer style="position: absolute; margin-top: 5vh; left: 15vw; width: 40vw; height: 45vh; padding: 1vh; background-image: url('assets/chart.png'); background-size: contain;">
+								</div>
+
+
+							</div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/d19038dcd7.js" crossorigin="anonymous"></script>
+
+				<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+
+		</body>
+
+		<script>
+
+		function unbold(){
+			$("#leon").css("font-weight","400");
+			$("#mcdavid").css("font-weight","400");
+			$("#pasternak").css("font-weight","400");
+			$("#mackinnon").css("font-weight","400");
+			$("#marchand").css("font-weight","400");
+			$("#kucherov").css("font-weight","400");
+			$("#kane").css("font-weight","400");
+			$("#matts").css("font-weight","400");
+			$("#huberdeau").css("font-weight","400");
+			$("#panarin").css("font-weight","400");
+
+			$("#leonNum").css("font-weight","400");
+			$("#mcdavidNum").css("font-weight","400");
+			$("#pasternakNum").css("font-weight","400");
+			$("#mackinnonNum").css("font-weight","400");
+			$("#marchandNum").css("font-weight","400");
+			$("#kucherovNum").css("font-weight","400");
+			$("#kaneNum").css("font-weight","400");
+			$("#mattsNum").css("font-weight","400");
+			$("#huberdeauNum").css("font-weight","400");
+			$("#panarinNum").css("font-weight","400");
+		}
+
+			$("#leon").hover(function(){
+				$("#skaterPic").css("background-image", "url(assets/leon.png)");
+				$("#teamPic").css("background-image", "url(assets/oil.png)");
+				document.getElementById("playerName").innerHTML = "Leon Draisaitl";
+				document.getElementById("playerNum").innerHTML = "#39";
+				document.getElementById("playerPoints").innerHTML = "110";
+				unbold();
+				$("#leon").css("font-weight","bold");
+				$("#leonNum").css("font-weight","bold");
+			});
+
+			$("#mcdavid").hover(function(){
+				$("#skaterPic").css("background-image", "url(assets/mcdavid.png)");
+				$("#teamPic").css("background-image", "url(assets/oil.png)");
+				document.getElementById("playerName").innerHTML = "Connor Mcdavid";
+				document.getElementById("playerNum").innerHTML = "#97";
+				document.getElementById("playerPoints").innerHTML = "97";
+				unbold();
+				$("#mcdavid").css("font-weight","bold");
+				$("#mcdavidNum").css("font-weight","bold");
+			});
+
+			$("#pasternak").hover(function(){
+				$("#skaterPic").css("background-image", "url(assets/pasternak.png)");
+				$("#teamPic").css("background-image", "url(assets/boston.png)");
+				document.getElementById("playerName").innerHTML = "David Pastrnak";
+				document.getElementById("playerNum").innerHTML = "#88";
+				document.getElementById("playerPoints").innerHTML = "95";
+				unbold();
+				$("#pasternak").css("font-weight","bold");
+				$("#pasternakNum").css("font-weight","bold");
+			});
+
+			$("#panarin").hover(function(){
+				$("#skaterPic").css("background-image", "url(assets/panarin.png)");
+				$("#teamPic").css("background-image", "url(assets/nyr.png)");
+				document.getElementById("playerName").innerHTML = "Artemi Panarin";
+				document.getElementById("playerNum").innerHTML = "#10";
+				document.getElementById("playerPoints").innerHTML = "95";
+				unbold();
+				$("#panarin").css("font-weight","bold");
+				$("#panarinNum").css("font-weight","bold");
+			});
+
+			$("#mackinnon").hover(function(){
+				$("#skaterPic").css("background-image", "url(assets/MacKinnon.png)");
+				$("#teamPic").css("background-image", "url(assets/colorado.png)");
+				document.getElementById("playerName").innerHTML = "Nathan MacKinnon";
+				document.getElementById("playerNum").innerHTML = "#29";
+				document.getElementById("playerPoints").innerHTML = "93";
+				unbold();
+				$("#mackinnon").css("font-weight","bold");
+				$("#mackinnonNum").css("font-weight","bold");
+			});
+
+			$("#marchand").hover(function(){
+				$("#skaterPic").css("background-image", "url(assets/marchard.png)");
+				$("#teamPic").css("background-image", "url(assets/boston.png)");
+				document.getElementById("playerName").innerHTML = "Brad Marchand";
+				document.getElementById("playerNum").innerHTML = "#63";
+				document.getElementById("playerPoints").innerHTML = "87";
+				unbold();
+				$("#marchand").css("font-weight","bold");
+				$("#marchandNum").css("font-weight","bold");
+			});
+
+			$("#kucherov").hover(function(){
+				$("#skaterPic").css("background-image", "url(assets/kucherov.png)");
+				$("#teamPic").css("background-image", "url(assets/lightning.png)");
+				document.getElementById("playerName").innerHTML = "Nikita Kucherov";
+				document.getElementById("playerNum").innerHTML = "#86";
+				document.getElementById("playerPoints").innerHTML = "85";
+				unbold();
+				$("#kucherov").css("font-weight","bold");
+				$("#kucherovNum").css("font-weight","bold");
+			});
+
+			$("#kane").hover(function(){
+				$("#skaterPic").css("background-image", "url(assets/kane.png)");
+				$("#teamPic").css("background-image", "url(assets/blackhawks.png)");
+				document.getElementById("playerName").innerHTML = "Patrick Kane";
+				document.getElementById("playerNum").innerHTML = "#88";
+				document.getElementById("playerPoints").innerHTML = "84";
+				unbold();
+				$("#kane").css("font-weight","bold");
+				$("#kaneNum").css("font-weight","bold");
+			});
+
+			$("#matts").hover(function(){
+				$("#skaterPic").css("background-image", "url(assets/matts.png)");
+				$("#teamPic").css("background-image", "url(assets/leafs.png)");
+				document.getElementById("playerName").innerHTML = "Auston Matthews";
+				document.getElementById("playerNum").innerHTML = "#34";
+				document.getElementById("playerPoints").innerHTML = "80";
+				unbold();
+				$("#matts").css("font-weight","bold");
+				$("#mattsNum").css("font-weight","bold");
+			});
+
+			$("#huberdeau").hover(function(){
+				$("#skaterPic").css("background-image", "url(assets/huberdeau.png)");
+				$("#teamPic").css("background-image", "url(assets/panthers.png)");
+				document.getElementById("playerName").innerHTML = "Jonathan Huberdeau";
+				document.getElementById("playerNum").innerHTML = "#11";
+				document.getElementById("playerPoints").innerHTML = "78";
+				unbold();
+				$("#huberdeau").css("font-weight","bold");
+				$("#huberdeauNum").css("font-weight","bold");
+			});
+
+
+
+		</script>
+</html>
