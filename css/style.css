@@ -110,6 +110,7 @@ h4 {
 
 .linkColor:hover{
     color: #B8A99A;
+    text-decoration: none;
 }
 
 /*FOR STAT TABLE*/ 
