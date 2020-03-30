@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="eng">
 	<head>
-        <title>Stateroo - User Page</title>
+        <title>Stateroo - Player Stats</title>
 	      <link rel="stylesheet" href="css/style.css" media = "screen and (min-width: 500px)">
-        <script type="text/javascript" src="javascript/userLandingPage.js"></script>
+        <!-- <script type="text/javascript" src="javascript/playerPage.js"></script> -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -11,35 +11,371 @@
         crossorigin="anonymous"/>
     </head>
 
-    <body onload="getGeneralInfo()">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">Sateroo</a>
-                <ul class="navbar-nav mr-auto mt-4 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Stats</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Teams</a>
-                </li>
-                </ul>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Stats</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Teams</a>
-                </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+        <body onload="getGeneralInfo()" style="padding:0; margin: 0; box-sizing: border-box">
+
+
+        <div id=statContainer style="display:block; height: 80%; width:100%; margin-top: 15vh;">
+
+            <div id=leftContainer style="width:20%; height:75vh; background-color:lightgrey; position:absolute; left: 0; margin-left: 5vw; padding:3vh; box-shadow: 10px 10px 10px grey;">
+                
+                <p1 style="font-size: 3vh;"> Popular Statistics </p1><br>
+
+                <br>
+                <p1 style="font-size: 2vh; font-weight: bolder;"> Skaters</p1><br>
+                <p1 style="font-size: 2vh;"> Shots per game </p1><br>
+                <p1 style="font-size: 2vh;"> Net penalities </p1><br>
+
+                <br>
+                <p1 style="font-size: 2vh; font-weight: bolder;"> Rookies </p1><br>
+                <p1 style="font-size: 2vh;"> PP % </p1><br>
+                <p1 style="font-size: 2vh;"> Goal % </p1><br>
+
+                <br>
+                <p1 style="font-size: 2vh; font-weight: bolder;"> Goalies </p1><br>
+                <p1 style="font-size: 2vh;"> Assists </p1><br>
+                <p1 style="font-size: 2vh;"> Save & </p1><br>
+
+                <br>
+                <p1 style="font-size: 2vh; font-weight: bolder;"> Teams </p1><br>
+                <p1 style="font-size: 2vh;"> Goals For </p1><br>
+                <p1 style="font-size: 2vh;"> Goals Against </p1><br>
+
+
             </div>
-        </nav>
-    <!-- Bootstrap Proof-->
-    <p class="my-5">asdfsd</p>
+
+            <div id=statsContainer style="width:65%; height:75vh; position:absolute; left: 30vw; top: 15vh; margin:0;">
+              
+
+              <div id=infoDiv style="width:30vw; height:30vw; position:absolute; left: 0; top:0vh; margin:0; padding:3vh;">
+                <p1 style="font-size: 3vh;"> Players </p1>
+
+                <div id = linksDiv style="display: inline-block; height: 3vw; width: 100%; border-bottom: 1px black solid;">
+                  <button style="font-size: 2vh; font-weight: bolder; display: inline-block; margin-right: 2vw; background: none; border: none;"> Points </button>
+                  <button style="font-size: 2vh; display: inline-block; margin-right: 2vw; background: none; border: none;"> Goals </button>
+                  <button style="font-size: 2vh; display: inline-block; background: none; border: none;"> Assists </button>
+
+                  <div id=infoDiv style="position: relative; height: 38vh; width: 100%; margin-top: 4vh">
+
+                    <div id=playerLinks style="position:absolute; right:2vw; top: 0; width: 50%; height: 100%;">
+                      
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Leon Draisaitl
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Connor McDavid </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> David Pastrnak
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Artemi Panarin
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Nathan MacKinnon
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Brad Marchand
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Nikita Kucherov
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Patrick Kane
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Auston Matthews
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Jonathan Huberdeau
+                      </button><br>
+
+                      <div id=statNums style="position:absolute; right: -1vw; top: 0; width: 20%; height: 100%;">
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 110
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 97
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 95
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 95
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 93
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 87
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 85
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 84
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 80
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 78
+                      </button><br>
+
+                      </div>
+                    </div>
+
+                    <div id=pic style="height: 15vh; width: 15vh; border-radius: 50%; background-image: url(assets/leon-draisaitl.jpg);background-size: contain; background-position: 1vw; background-repeat: no-repeat;"> </div>
+                    <div id=teamPic style="position: absolute; left: 6vw; top: 8vh; height: 7vh; width: 7vh; border-radius: 50%; background-image: url(assets/oil.jpeg); background-size: contain;"> </div>
+
+                    <div id=playerInfo style="position:absolute; left: 0vw; bottom:0; width: 35%; height: 23vh;">
+                      <center> <p1 style="font-size: 2vh;text-align: center;"> #10 <br> Leon Draisaitl </p1> </center>
+
+                      <center> <p1 style="font-size: 4vh;text-align: center; font-weight: bold;"> <span style="font-size: 1.5vh;">Points</span> <br> 110  </p1> </center>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
 
-    </body>
+              <div id=infoDiv style="width:30vw; height:30vw; position:absolute; right: 0; top:0vh; margin:0; padding:3vh;">
+                <p1 style="font-size: 3vh;"> Goalies </p1>
+
+                <div id = linksDiv style="display: inline-block; height: 3vw; width: 100%; border-bottom: 1px black solid;">
+                  <button style="font-size: 2vh; font-weight: bolder; display: inline-block; margin-right: 2vw; background: none; border: none;"> GAA </button>
+                  <button style="font-size: 2vh; display: inline-block; margin-right: 2vw; background: none; border: none;"> SV % </button>
+                  <button style="font-size: 2vh; display: inline-block; background: none; border: none;"> Shutouts </button>
+
+                  <div id=infoDiv style="position: relative; height: 38vh; width: 100%; margin-top: 4vh;">
+
+                    <div id=playerLinks style="position:absolute; right:2vw; top: 0; width: 50%; height: 100%;">
+                      
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Tuukka Rask
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Jake Allen
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Anton Khudobin
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Darcy Kuemper
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Elvis Merzlikins
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Jaroslav Halak
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Pavel Francouz
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Carter Hart
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Tristan Jarry
+
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Ben Bishop
+
+                      </button><br>
+
+                      <div id=statNums style="position:absolute; right: -1vw; top: 0; width: 20%; height: 100%;">
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 2.12
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 2.15
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 2.22
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 2.22
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 2.35
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 2.39
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 2.41
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 2.42
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 2.43
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 2.50
+                      </button><br>
+
+                      </div>
+                    </div>
+
+                    <div id=pic style="height: 15vh; width: 15vh; border-radius: 50%; background-image: url(assets/tuukka.png);background-size: contain; background-position: 1vw; background-repeat: no-repeat;"> </div>
+                    <div id=teamPic style="position: absolute; left: 6vw; top: 8vh; height: 7vh; width: 7vh; border-radius: 50%; background-image: url(assets/boston.png); background-size: contain;"> </div>
+
+                    <div id=playerInfo style="position:absolute; left: 0vw; bottom:0; width: 35%; height: 23vh;">
+                      <center> <p1 style="font-size: 2vh;text-align: center;"> #40 <br> Tuukka Rask
+                    </p1> </center>
+
+                      <center> <p1 style="font-size: 4vh;text-align: center; font-weight: bold;"> <span style="font-size: 1.5vh;">GAA</span> <br> 2.12  </p1> </center>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div id=infoDiv style="width:30vw; height:30vw; position:absolute; right: 0; bottom:-37vh; margin:0; padding:3vh;">
+                <p1 style="font-size: 3vh;"> Teams </p1>
+
+                <div id = linksDiv style="display: inline-block; height: 3vw; width: 100%; border-bottom: 1px black solid;">
+                  <button style="font-size: 2vh; font-weight: bolder; display: inline-block; margin-right: 2vw; background: none; border: none;"> Points </button>
+                  <button style="font-size: 2vh; display: inline-block; margin-right: 2vw; background: none; border: none;"> PP % </button>
+                  <button style="font-size: 2vh; display: inline-block; background: none; border: none;"> PK % </button>
+
+                  <div id=infoDiv style="position: relative; height: 38vh; width: 100%; margin-top: 4vh;">
+
+                    <div id=playerLinks style="position:absolute; right:2vw; top: 0; width: 50%; height: 100%;">
+                      
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Bruins
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> St Louis
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Colorado
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Tampa Bay
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Washington
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Philadelphia
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Pittsburgh
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Vegas
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Edmonton
+
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Dallas
+
+                      </button><br>
+
+                      <div id=statNums style="position:absolute; right: -1vw; top: 0; width: 20%; height: 100%;">
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 71
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 71
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 70
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 70
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 69
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 69
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 69
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 68
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 66
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 66
+                      </button><br>
+
+                      </div>
+                    </div>
+
+                    <div id=pic style="height: 15vh; width: 18vh; border-radius: 50%; background-image: url(assets/boston.png);background-size: contain; background-position: 1vw; background-repeat: no-repeat;"> </div>
+
+                    <div id=playerInfo style="position:absolute; left: 0vw; bottom:0; width: 35%; height: 23vh;">
+                      <center> <p1 style="font-size: 2vh;text-align: center;"> Boston Bruins
+                    </p1> </center>
+
+                    <br>
+                      <center> <p1 style="font-size: 4vh;text-align: center; font-weight: bold;"> <span style="font-size: 1.5vh;">Points</span> <br> 71  </p1> </center>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div id=infoDiv style="width:30vw; height:30vw; position:absolute; left: 0; bottom:-37vh; margin:0; padding:3vh;">
+                <p1 style="font-size: 3vh;"> Rookies </p1>
+
+                <div id = linksDiv style="display: inline-block; height: 3vw; width: 100%; border-bottom: 1px black solid;">
+                  <button style="font-size: 2vh; font-weight: bolder; display: inline-block; margin-right: 2vw; background: none; border: none;"> Points </button>
+                  <button style="font-size: 2vh; display: inline-block; margin-right: 2vw; background: none; border: none;"> Goals </button>
+                  <button style="font-size: 2vh; display: inline-block; background: none; border: none;"> Assists </button>
+
+                  <div id=infoDiv style="position: relative; height: 38vh; width: 100%; margin-top: 4vh;">
+
+                    <div id=playerLinks style="position:absolute; right:2vw; top: 0; width: 50%; height: 100%;">
+                      
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Quinn Hughes
+
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Cale Makar
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Dominik Kubalik
+
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Adam Fox
+
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Victor Olofsson
+
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Nick Suzuki
+
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Martin Necas
+
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Denis Gurianov
+
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> John Marino
+
+
+
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> Alex Nylander
+
+
+                      </button><br>
+
+                      <div id=statNums style="position:absolute; right: -1vw; top: 0; width: 20%; height: 100%;">
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 53
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 50
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 46
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 42
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 42
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 41
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 36
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 29
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 29
+                      </button><br>
+                      <button style="font-size: 1.5vh; background: none; border: none; margin-top: 1vh;"> 26
+                      </button><br>
+
+                      </div>
+                    </div>
+
+                    <div id=pic style="height: 15vh; width: 15vh; border-radius: 50%; background-image: url(assets/huges.jpg);background-size: contain; background-position: 1vw; background-repeat: no-repeat;"> </div>
+                    <div id=teamPic style="position: absolute; left: 6vw; top: 8vh; height: 7vh; width: 7vh; border-radius: 50%; background-image: url(assets/van.jpg); background-size: contain;"> </div>
+
+                    <div id=playerInfo style="position:absolute; left: 0vw; bottom:0; width: 35%; height: 23vh;">
+                      <center> <p1 style="font-size: 2vh;text-align: center;"> #43 <br> Quinn Hughes
+
+                    </p1> </center>
+
+                      <center> <p1 style="font-size: 4vh;text-align: center; font-weight: bold;"> <span style="font-size: 1.5vh;">GAA</span> <br> 2.12  </p1> </center>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+
+
+
+
+		</body>
 </html>
