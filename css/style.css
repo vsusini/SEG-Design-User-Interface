@@ -120,6 +120,14 @@ h4 {
     text-decoration: none;
 }
 
+button:focus{
+  outline:0 !important;
+}
+
+button{
+  text-decoration: none;
+}
+
 /*FOR STAT TABLE*/
 
 table {
