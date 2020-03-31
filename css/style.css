@@ -129,8 +129,7 @@ table {
 }
 
 td, th {
-  border: 1px solid #cccccc;
-  text-align: left;
+  text-align: center;
   padding: 8px;
 }
 
