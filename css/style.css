@@ -166,3 +166,7 @@ tr:nth-child(odd) {
   font-weight: 700;
   text-decoration: none;
 }
+
+#rinkImg{
+    pointer-events: none;
+}
